@@ -1,0 +1,8 @@
+.menu-main-container {
+  box-shadow: 10px 0px 10px #0000004b;
+  background-color: white;
+  height: 100vh;
+  padding-left: 13px;
+  padding-top: 10px;
+  max-width: 220px;
+}
