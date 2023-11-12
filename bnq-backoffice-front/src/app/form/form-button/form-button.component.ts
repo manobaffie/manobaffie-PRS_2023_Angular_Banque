@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form-button',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-button.component.css']
 })
 export class FormButtonComponent {
+  @Input() click!: Function
 
+  constructor() {
+    // this.click = new EventEmitter<any>()
+  }
 }
