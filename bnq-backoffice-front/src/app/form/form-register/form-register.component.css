@@ -1,0 +1,10 @@
+.form-register-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}

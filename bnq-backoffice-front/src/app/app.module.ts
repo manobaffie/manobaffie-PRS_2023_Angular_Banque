@@ -10,19 +10,17 @@ import { MenuDropdownComponent } from './menu/menu-dropdown/menu-dropdown.compon
 import { PageLoginComponent } from './page/page-login/page-login.component';
 import { PageHomeComponent } from './page/page-home/page-home.component';
 
-
 import { FormModule } from './form/form.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-
-
     MenuComponent,
     MenuItemComponent,
     MenuDropdownComponent,
     PageLoginComponent,
-    PageHomeComponent,
+    PageHomeComponent
   ],
   imports: [
     BrowserModule,

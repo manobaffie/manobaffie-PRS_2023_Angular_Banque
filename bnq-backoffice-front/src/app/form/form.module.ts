@@ -15,7 +15,7 @@ import { FormRegisterComponent } from './form-register/form-register.component';
     FormInputTextComponent,
     FormInputPasswordComponent,
     FormButtonComponent,
- 
+
     FormLoginComponent,
     FormRegisterComponent,
   ],

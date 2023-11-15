@@ -7,11 +7,8 @@ import { FormComponent } from '../form/form.component';
   templateUrl: './form-login.component.html',
   styleUrls: ['./form-login.component.css']
 })
-export class FormLoginComponent implements AfterViewInit {
+export class FormLoginComponent {
   @ViewChild(FormComponent) formContent?: FormComponent
-
-  ngAfterViewInit(): void {
-  }
 
   test(): void {
     console.log(this.formContent?.formGroup.controls["password-0"].value);

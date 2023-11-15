@@ -4,6 +4,6 @@ import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.Dependent;
 
 @Dependent
-public class BaseEntityRepository<T> implements PanacheRepository<T> {
-
+public class BaseEntityRepository<T extends BaseEntity> implements PanacheRepository<T> {
+// TODO fill BaseEntity
 }
