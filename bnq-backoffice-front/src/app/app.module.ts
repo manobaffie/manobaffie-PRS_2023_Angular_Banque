@@ -12,7 +12,6 @@ import { PageHomeComponent } from './page/page-home/page-home.component';
 
 import { FormModule } from './form/form.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,

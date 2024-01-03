@@ -1,9 +1,9 @@
-package com.bnq.scr.User.Dtos;
+package com.bnq.User.Dtos;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 import jakarta.validation.constraints.NotBlank;
 
-@RegisterForReflection()
+@RegisterForReflection
 public class CreateUserDto {
 
   @NotBlank(message="username may not be blank")
