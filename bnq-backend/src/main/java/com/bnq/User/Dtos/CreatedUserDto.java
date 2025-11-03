@@ -1,9 +1,15 @@
 package com.bnq.User.Dtos;
 
-import io.quarkus.runtime.annotations.RegisterForReflection;
+import com.bnq.Entity.BaseEntityDto;
+import com.bnq.User.User;
 
-@RegisterForReflection
-public class CreatedUserDto {
+import jakarta.persistence.MappedSuperclass;
+
+@MappedSuperclass
+public class CreatedUserDto extends BaseEntityDto {
+  public CreatedUserDto(User user) {
+    super(user);
+  }
+
   public String username;
-  public String token;
 }

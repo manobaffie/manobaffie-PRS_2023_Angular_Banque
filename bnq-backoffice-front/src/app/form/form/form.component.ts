@@ -11,7 +11,6 @@ import { FormInputPasswordComponent } from '../form-input-password/form-input-pa
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements AfterViewInit {
-
   @ContentChildren(FormInputTextComponent) private inputText?: QueryList<FormInputTextComponent>;
   @ContentChildren(FormInputPasswordComponent) private inputPassword?: QueryList<FormInputPasswordComponent>;
   // TODO modify QueryList<T> to array<QueryList<T>> or Map<T, QueryList<T>>

@@ -15,6 +15,6 @@ export class FormRegisterComponent {
   ) { }
 
   register(): void {
-
+    console.log(this.formContent?.formGroup.controls["password-0"].value);
   }
 }

@@ -11,5 +11,4 @@ public class BaseEntityList<T extends BaseEntity> implements Iterable<T> {
   public Iterator<T> iterator() {
     return this.entity.iterator();
   }
-  
 }

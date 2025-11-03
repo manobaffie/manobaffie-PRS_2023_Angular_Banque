@@ -2,10 +2,10 @@ package com.bnq.Role;
 
 import com.bnq.Entity.BaseEntityRepositoryMigratable;
 
-import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.RequestScoped;
 import jakarta.transaction.Transactional;
 
-@ApplicationScoped
+@RequestScoped
 public class RoleRepository implements BaseEntityRepositoryMigratable<Role> {
   @Transactional
   public Role create(String name, String description) {

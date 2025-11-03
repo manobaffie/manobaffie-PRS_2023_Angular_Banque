@@ -3,14 +3,13 @@ package com.bnq.User;
 import java.util.List;
 
 import com.bnq.Entity.BaseEntityRepositoryMigratable;
-import com.bnq.Role.Role;
 import com.bnq.Role.RoleRepository;
 
-import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 
-@ApplicationScoped
+@RequestScoped
 public class UserRepository implements BaseEntityRepositoryMigratable<User> {
 
   @Inject

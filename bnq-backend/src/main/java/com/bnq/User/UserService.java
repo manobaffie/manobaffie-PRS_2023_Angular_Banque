@@ -3,10 +3,10 @@ package com.bnq.User;
 import com.bnq.Token.TokenService;
 import com.bnq.User.Dtos.CreatedUserDto;
 
-import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 
-@ApplicationScoped
+@RequestScoped
 public class UserService {
 
   @Inject
@@ -24,7 +24,7 @@ public class UserService {
 
     this.tokenService.build(user);
 
-    CreatedUserDto cretedUser = new CreatedUserDto();
+    CreatedUserDto cretedUser = new CreatedUserDto(user);
     cretedUser.username = user.getName();
     cretedUser.token = this.tokenService.sign();
 
